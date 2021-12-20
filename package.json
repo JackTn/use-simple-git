@@ -9,6 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@azure/swagger-validation-common": "^0.1.2",
     "simple-git": "^2.48.0"
   }
 }

@@ -1,4 +1,4 @@
-const GIT_REPOSITORY_ROOT = 'D:/project/azure-rest-api-specs'
+const GIT_REPOSITORY_ROOT = 'D:/Project/jacktn/azure-rest-api-specs'
 const simpleGit = require('simple-git/promise');
 const fs = require('fs');
 const path = require('path');
@@ -49,14 +49,14 @@ async function fileOperation(event, fileName, data) {
 
 //  getCurrentBranch();
 
- async function isBranchIncludes() {
-    const targetBranchName = "NullMDR-patch-pull-request-template"
-    // const res1 = branches.all.includes(targetBranchName)
-    res2 = git.branch([targetBranchName, `remotes/origin/${targetBranchName}`])
-    console.log(res2);
-    await fileOperation('writeFile', "git-inclues-branch.json", res2);
-    const branches = await git.branch()
-    await fileOperation('writeFile', "git-inclues-branch2.json", branches);
- }
+//  async function isBranchIncludes() {
+//     const targetBranchName = "NullMDR-patch-pull-request-template"
+//     // const res1 = branches.all.includes(targetBranchName)
+//     res2 = git.branch([targetBranchName, `remotes/origin/${targetBranchName}`])
+//     console.log(res2);
+//     await fileOperation('writeFile', "git-inclues-branch.json", res2);
+//     const branches = await git.branch()
+//     await fileOperation('writeFile', "git-inclues-branch2.json", branches);
+//  }
 
- isBranchIncludes();
+//  isBranchIncludes();
